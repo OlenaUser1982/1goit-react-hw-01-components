@@ -1,23 +1,29 @@
-import css from './Profile.module.cssтзь';
-
+import css from './Profile.module.css';
 const Profile = ({ username, stats, avatar, tag, location }) => {
   return (
     <div className="profile">
       <div className="description">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-          alt="User avatar"
-          className="avatar"
-        />
-        <p className="name">Petra Marica</p>
-        <p className="tag">@pmarica</p>
-        <p className="location">Salvador, Brasil</p>
+        <div className={css.wrapper}>
+          <img src={avatar} alt="User avatar" className="avatar" />
+        </div>
+
+        <p className="username">{username}</p>
+        <p className="tag">@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className={css.stats}>
         <li>
           <span className="label">Followers</span>
-          <span className="quantity">1000</span>
+          <span className="quantity">{stats.followers}</span>
+        </li>
+        <li>
+          <span className="label">Views</span>
+          <span className="quantity">{stats.views}</span>
+        </li>
+        <li>
+          <span className="label">Likes</span>
+          <span className="quantity">{stats.likes}</span>
         </li>
       </ul>
     </div>

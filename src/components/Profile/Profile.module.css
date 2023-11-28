@@ -1,0 +1,13 @@
+.wrapper {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: aqua;
+}
+.stats {
+  list-style: none;
+}
+.location {
+  color: blueviolet;
+}

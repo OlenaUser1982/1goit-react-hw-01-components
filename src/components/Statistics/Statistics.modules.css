@@ -1,0 +1,19 @@
+.title {
+  text-align: center;
+}
+
+.statList {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.item {
+  width: 56px;
+  border: 15px solid green;
+  padding: 7px;
+  margin: 1px;
+  display: flex;
+  gap: 10px;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
